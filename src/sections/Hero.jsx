@@ -12,7 +12,23 @@ const Hero = () => {
         <p
           className=""
         >
-          Our Summer Collections
+          Our Summer Collection
+        </p>
+        <h1>
+          <span>
+            The New Arrival
+          </span>
+          <br />
+          <span>
+            Nike 
+          </span>
+          Shoes
+        </h1>
+        <p>
+          Discover  stylish Nike
+          arrivals, quality comfort,
+          and innovation for your
+          active life.
         </p>
       </div>
     </section>
