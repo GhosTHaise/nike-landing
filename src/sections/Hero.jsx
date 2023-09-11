@@ -31,7 +31,9 @@ const Hero = () => {
             Nike 
           </span> Shoes
         </h1>
-        <p>
+        <p
+          className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm"
+        >
           Discover  stylish Nike
           arrivals, quality comfort,
           and innovation for your
@@ -50,10 +52,10 @@ const Hero = () => {
                 key={statistic.label} 
                 className=""
               >
-                <p>
+                <p className="text-4xl font-palanquin font-bold">
                   {statistic.value}
                 </p>
-                <p>
+                <p className="leading-7 font-montserrat text-slate-gray">
                   {statistic.label}
                 </p>
               </div>
