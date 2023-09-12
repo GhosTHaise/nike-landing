@@ -1,4 +1,4 @@
-
+import { useState } from "react"
 import { arrowRight } from "../assets/icons"
 import Button from "../components/Button"
 import { shoes, statistics } from "../constants"
@@ -6,6 +6,7 @@ import { bigShoe1 } from "../assets/images"
 import ShoeCard from "../components/card/ShoeCard"
 
 const Hero = () => {
+  const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
   return (
     <section
       id="home"
@@ -72,7 +73,7 @@ const Hero = () => {
         "
       >
         <img 
-          src={bigShoe1} 
+          src={bigShoeImg} 
           alt="shoe collection" 
           width={610}
           height={500}
@@ -85,13 +86,13 @@ const Hero = () => {
           {
             shoes.map((shoe) => (
               <div
-                key={shoe}
+                key={shoe.bigShoe}
                 
               >
                 <ShoeCard
                     imgUrl={shoe}
-                    changeBigShoeImage={() => {}}
-                    bigShoeImage=""
+                    changeBigShoeImage={(shoe) => setBigShoeImg(shoe)}
+                    bigShoeImage={bigShoeImg}
                 />
               </div>
             ))

@@ -2,14 +2,14 @@ import React from 'react'
 
 const ShoeCard = ({imgUrl,changeBigShoeImage,bigShoeImage}) => {
     const handleClick = () => {
-        if(bigShoeImage == imgUrl.bigShoe){
+        if(!(bigShoeImage == imgUrl.bigShoe)){
             changeBigShoeImage(imgUrl.bigShoe )
         }
     }
   return (
     <div
-        className={`border-2 rounded- xl
-            ${bigShoeImage === imgUrl ? "border-coral-red" : "border-transparent"}
+        className={`border-2 rounded-xl
+            ${bigShoeImage === imgUrl.bigShoe ? "border-coral-red" : "border-transparent"}
             cursor-pointer max-sm:flex-1 
         `}
         onClick={handleClick}
