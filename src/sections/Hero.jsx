@@ -78,11 +78,15 @@ const Hero = () => {
           height={500}
           className="object-contain relative z-10"
         />
-        <div>
+        <div
+        /**sm:left-[10%] */
+          className="flex sm:gap-6 gap-4 absolute -bottom-[5%] max-sm:px-6"
+        >
           {
             shoes.map((shoe) => (
               <div
                 key={shoe}
+                
               >
                 <ShoeCard
                     imgUrl={shoe}
