@@ -34,12 +34,18 @@ const SuperQuality = () => {
              providing you with unmatched quality, 
              innovation, and a touch of elegance.
           </p>
-          <p>
+          <p 
+            className="mt-6 lg:max-w-lg info-text">
             Our dedication to detail and excellence ensures your satisfaction
           </p>
-          <Button
-            label="View details"
-          />
+          <div
+            className="mt-11"
+          >
+            <Button
+                label="View details"
+            />
+          </div>
+          
       </div>
     </section>
   )
