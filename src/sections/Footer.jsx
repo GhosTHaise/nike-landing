@@ -1,5 +1,5 @@
 import { footerLogo } from "../assets/images"
-import { socialMedia } from "../constants"
+import { footerLinks, socialMedia } from "../constants"
 
 
 const Footer = () => {
@@ -45,6 +45,36 @@ const Footer = () => {
                 ))}
               </div>
             </a>
+          </div>
+          <div
+            className="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap"
+          >
+            {
+              footerLinks.map((linkSection) => (
+                <div
+                  key={linkSection}
+                >
+                  <h4
+                    className="text-white font-montserrat text-2xl leading-normal font-medium mb-6"
+                  >
+                    {linkSection.title}
+                  </h4>
+                  <ul>
+                    {
+                      linkSection.links.map((link) => (
+                        <li
+                          key={link.name}
+                          className="mt-3 text-white-400 font-montserrat text-base 
+                          leading-normal hover:text-slate-gray"
+                        >
+                          <a href={link.link}>{link.name}</a>
+                        </li>
+                      ))
+                    }
+                  </ul>
+                </div>
+              ))
+            }
           </div>
       </div>
     </footer>
