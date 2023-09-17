@@ -1,8 +1,8 @@
-# React + Vite
+# React + Vite > Nike-Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+>Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![nike_landing](https://arweave.net/LXoP45t6I1y1nFwZgbQE4atNaQem40iy4adrqJShw4g)
+
+You can see full project on : [www.nike-landing.mg](https://nike-landing-lscr3ef6j-ghosthaise.vercel.app/)
